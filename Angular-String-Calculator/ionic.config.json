@@ -1,7 +1,0 @@
-{
-  "name": "Angular-String-Calculator",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
