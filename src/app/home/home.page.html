@@ -15,7 +15,8 @@
 
   <div id="container">
     <strong>Enter number string.</strong>
-    <ion-input #strInput type="text" placeholder="1,2,3..."></ion-input>
+    <ion-textarea #strInput type="text" placeholder="1,2,3..."></ion-textarea>
+    <!-- <ion-text #strInput type="text" placeholder="1,2,3..."></ion-text> -->
     <ion-button (click)="add(strInput.value)" expand="block" fill="clear" shape="round">
       Calculate Sum
     </ion-button>
