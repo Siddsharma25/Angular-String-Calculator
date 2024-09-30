@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      String Calculator
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,13 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Enter number string.</strong>
+    <ion-input #strInput type="text" placeholder="1,2,3..."></ion-input>
+    <ion-button (click)="add(strInput.value)" expand="block" fill="clear" shape="round">
+      Calculate Sum
+    </ion-button>
+    <div>
+      Sum is <span>{{sum}}</span>
+    </div>
   </div>
 </ion-content>
