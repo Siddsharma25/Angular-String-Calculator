@@ -45,10 +45,10 @@ export class HomePage {
     
       this.sum=0;
       let negatives='';
-      str = str.split('\n')
+      str = str?.split('\n')
       let delimiter = str[0];
       str = str[1];
-      str = str.split(delimiter);
+      str = str?.split(delimiter);
       for(let i=0;i<str?.length;i++){
        if(str[i]<0){        
             negatives += str[i]+',';
