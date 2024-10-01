@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      String Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Enter number string.</strong>
+    <ion-textarea #strInput type="text" placeholder="1,2,3..."></ion-textarea>
+    <!-- <ion-text #strInput type="text" placeholder="1,2,3..."></ion-text> -->
+    <ion-button (click)="add(strInput.value)" expand="block" fill="clear" shape="round">
+      Calculate Sum
+    </ion-button>
+    <div>
+      Sum is <span>{{sum}}</span>
+    </div>
+  </div>
+</ion-content>
